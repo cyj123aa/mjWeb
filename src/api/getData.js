@@ -227,3 +227,32 @@ export const getAddressById = address_id => fetch('/v1/addresse/' + address_id);
  */
 
 export const getUserCity = () => fetch('/v1/user/city/count');
+
+/**
+ * 创建当天对局
+ */
+
+export const installDay = data => fetch('/admin/installDay', data, 'POST');
+
+/**
+ * 获取用户下拉框
+ */
+
+export const getUser = data => fetch('/admin/getUser', data, 'POST');
+
+/**
+ * 获取列表标题
+ */
+
+export const getTable = data => fetch('/admin/getTable', data, 'POST');
+
+/**
+ * 获取列表数据
+ */
+export const getTableData = data => fetch('/admin/getTableData', data, 'POST');
+
+
+
+
+
+
