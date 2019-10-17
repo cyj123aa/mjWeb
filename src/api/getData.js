@@ -56,7 +56,7 @@ export const orderCount = date => fetch('/statis/order/' + date + '/count');
 
 export const adminDayCount = date => fetch('/admin/data');
 
-export const getVueData = date => fetch('/admin/vueData',date,"POST");
+export const getVueData = date => fetch('/home/vueData',date,"POST");
 /**
  * 管理员列表
  */
@@ -232,24 +232,24 @@ export const getUserCity = () => fetch('/v1/user/city/count');
  * 创建当天对局
  */
 
-export const installDay = data => fetch('/admin/installDay', data, 'POST');
+export const installDay = data => fetch('/entry/installDay', data, 'POST');
 
 /**
  * 获取用户下拉框
  */
 
-export const getUser = data => fetch('/admin/getUser', data, 'POST');
+export const getUser = data => fetch('/entry/getUser', data, 'POST');
 
 /**
  * 获取列表标题
  */
 
-export const getTable = data => fetch('/admin/getTable', data, 'POST');
+export const getTable = data => fetch('/entry/getTable', data, 'POST');
 
 /**
  * 获取列表数据
  */
-export const getTableData = data => fetch('/admin/getTableData', data, 'POST');
+export const getTableData = data => fetch('/entry/getTableData', data, 'POST');
 
 
 
